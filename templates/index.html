@@ -4,6 +4,15 @@
 
   </head>
   <body>
-    
+    This site is {{ owner }}'s
+
+    {% for event in events_list %}
+      <ul>
+        <div>
+          {{ event.name }} <br> {{ event.date }} <br> {{ event.participants }}
+        </div>
+      </ul>
+    {% endfor %}
+
   </body>
 </html>
